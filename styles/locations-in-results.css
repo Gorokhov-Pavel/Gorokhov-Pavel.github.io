@@ -1,0 +1,39 @@
+#log {
+    position: fixed;
+    right: 0;
+    overflow-y: scroll;
+    overflow-x: visible;
+    width: 500px;
+    height: 30%;
+    border-style: solid;
+}
+
+table span {
+    font-size: 40pt;
+}
+
+#all-results {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: visible;
+    width: 500px;
+    height: 65%;
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+}
+#all-results table td {
+    border-style: none;
+    height: 20px;
+    width: 30%;
+    overflow-x: visible;
+    color: black;
+}
+#all-results thead td {
+    color: gray;
+}
+#all-results table td span {
+    font-size: 28pt;
+}

@@ -1,0 +1,65 @@
+#input-table tbody td {
+    color: black;
+}
+#input-table tbody tr:first-child td:first-child {
+    color: blue;
+}
+#input-table tbody tr:first-child + tr td:first-child {
+    color: green;
+}
+#input-table tbody tr:first-child + tr + tr td:first-child {
+    color: blue;
+}
+#input-table tbody tr:first-child + tr + tr + tr td:first-child {
+    color: green;
+}
+#input-table tbody tr:first-child + tr + tr + tr + tr td:first-child {
+    color: blue;
+}
+
+table span {
+    font-size: 40pt;
+}
+
+.name {
+    text-align: left;
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+#output-table {
+    position: absolute;
+    top: 82px;
+    left: 12px;
+}
+#input-table {
+    position: absolute;
+    top: 82px;
+    left: 750px;
+}
+div h1 {
+    position: absolute;
+    top: 760px;
+    left: 12px;
+    text-align: left;
+}
+#on-sum-1 {
+    position: absolute;
+    top: 685px;
+    left: 130px;
+    visibility: hidden;
+}
+#on-sum-2 {
+    position: absolute;
+    top: 760px;
+    left: 245px;
+    visibility: hidden;
+}
+
+.under-thing {
+    border: solid;
+    background-color: gold;
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}

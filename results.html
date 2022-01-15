@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Abaka</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/locations-in-results.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <div id="log">
+      <p> Команда №2 сдала задачу №3 в теме Тема №2 </p>
+      <p> Комманда №1 совершает неудачную попытку сдачи задачи №5 в теме Тема №1 </p>
+      <p> Команда №1 набирает первые очки! </p>
+      <p> Команда №1 сдала задачу №1 в теме Тема №1 </p>
+      <p> Игра началась! </p>
+    </div>
+
+    <div id="all-results">
+      <table>
+	<thead>
+	  <tr>
+	    <td class="mesto">
+	      Место
+	    </td>
+	    <td class="name">
+	      Название комманды
+	    </td>
+	    <td class="sum">
+	      Сумма очков
+	    </td>
+	  </tr>
+	</thead>
+      </table>
+    </div>
+    
+    <div id="team-1">
+      <h1 class="name"> Команда №1 </h1>
+      <h1 class="sum"> Сумма: <span>0</span> + <span>0</span> + <span>0</span> - <span>0</span> = <span>0</span>
+      </h1>
+      <table id="output-table"> 
+	<colgroup span="1">
+	  <col span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<thead>	   
+	  <tr>
+	    <td id="cell0-0">Темы</td>
+	    <td id="cell0-1">1</td>
+	    <td id="cell0-2">2</td>
+	    <td id="cell0-3">3</td>
+	    <td id="cell0-4">4</td>
+	    <td id="cell0-5">5</td>
+	    <td id="cell0-6">Бонусы</td>
+	  </tr>
+	</thead>
+	<tfoot>
+	  <tr>
+	    <td id="cell6-0">Бонусы</td>
+	    <td id="cell6-1" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-2" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-3" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-4" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-5" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-6"></td>
+	  </tr>
+	</tfoot>
+	<tbody>
+	  <tr>
+	    <td id="cell1-0">Тема №1</td>
+	    <td id="cell1-1" class="first-try"><span>0</span></td>
+	    <td id="cell1-2" class="first-try"><span>0</span></td>
+	    <td id="cell1-3" class="first-try"><span>0</span></td>
+	    <td id="cell1-4" class="right-from-first-try"><span>40</span></td>
+	    <td id="cell1-5" class="first-try"><span>0</span></td>
+	    <td id="cell1-6" class="bonus-can"><span>0</span></td>	   
+	  </tr>
+	  <tr>
+	    <td id="cell2-0">Тема №2</td>
+	    <td id="cell2-1" class="first-try"><span>0</span></td>
+	    <td id="cell2-2" class="first-try"><span>0</span></td>
+	    <td id="cell2-3" class="first-try"><span>0</span></td>
+	    <td id="cell2-4" class="first-try"><span>0</span></td>
+	    <td id="cell2-5" class="first-try"><span>0</span></td>
+	    <td id="cell2-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell3-0">Тема №3</td>
+	    <td id="cell3-1" class="first-try"><span>0</span></td>
+	    <td id="cell3-2" class="first-try"><span>0</span></td>
+	    <td id="cell3-3" class="first-try"><span>0</span></td>
+	    <td id="cell3-4" class="first-try"><span>0</span></td>
+	    <td id="cell3-5" class="first-try"><span>0</span></td>
+	    <td id="cell3-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell4-0">Тема №4</td>
+	    <td id="cell4-1" class="first-try"><span>0</span></td>
+	    <td id="cell4-2" class="first-try"><span>0</span></td>
+	    <td id="cell4-3" class="first-try"><span>0</span></td>
+	    <td id="cell4-4" class="first-try"><span>0</span></td>
+	    <td id="cell4-5" class="first-try"><span>0</span></td>
+	    <td id="cell4-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell5-0">Тема №5</td>
+	    <td id="cell5-1" class="first-try"><span>0</span></td>
+	    <td id="cell5-2" class="first-try"><span>0</span></td>
+	    <td id="cell5-3" class="first-try"><span>0</span></td>
+	    <td id="cell5-4" class="first-try"><span>0</span></td>
+	    <td id="cell5-5" class="first-try"><span>0</span></td>
+	    <td id="cell5-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	</tbody>
+      </table>
+
+    </div>
+
+    <div id="team-2">
+      <h1 class="name"> Команда №2 </h1>
+      <h1 class="sum"> Сумма: <span>0</span> + <span>0</span> + <span>0</span> - <span>0</span> = <span>0</span>
+      </h1>
+      <table id="output-table"> 
+	<colgroup span="1">
+	  <col span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<thead>	   
+	  <tr>
+	    <td id="cell0-0">Темы</td>
+	    <td id="cell0-1">1</td>
+	    <td id="cell0-2">2</td>
+	    <td id="cell0-3">3</td>
+	    <td id="cell0-4">4</td>
+	    <td id="cell0-5">5</td>
+	    <td id="cell0-6">Бонусы</td>
+	  </tr>
+	</thead>
+	<tfoot>
+	  <tr>
+	    <td id="cell6-0">Бонусы</td>
+	    <td id="cell6-1" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-2" class="bonus-fail"><span>0</span></td>
+	    <td id="cell6-3" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-4" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-5" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-6"></td>
+	  </tr>
+	</tfoot>
+	<tbody>
+	  <tr>
+	    <td id="cell1-0">Тема №1</td>
+	    <td id="cell1-1" class="right-from-second-try"><span>5</span></td>
+	    <td id="cell1-2" class="first-try"><span>0</span></td>
+	    <td id="cell1-3" class="right-from-first-try"><span>30</span></td>
+	    <td id="cell1-4" class="first-try"><span>0</span></td>
+	    <td id="cell1-5" class="first-try"><span>0</span></td>
+	    <td id="cell1-6" class="bonus-can"><span>0</span></td>	   
+	  </tr>
+	  <tr>
+	    <td id="cell2-0">Тема №2</td>
+	    <td id="cell2-1" class="first-try"><span>0</span></td>
+	    <td id="cell2-2" class="fail"><span>0</span></td>
+	    <td id="cell2-3" class="right-from-first-try"><span>30</span></td>
+	    <td id="cell2-4" class="first-try"><span>0</span></td>
+	    <td id="cell2-5" class="first-try"><span>0</span></td>
+	    <td id="cell2-6" class="bonus-fail"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell3-0">Тема №3</td>
+	    <td id="cell3-1" class="right-from-first-try"><span>10</span></td>
+	    <td id="cell3-2" class="right-from-first-try"><span>20</span></td>
+	    <td id="cell3-3" class="right-from-second-try"><span>15</span></td>
+	    <td id="cell3-4" class="right-from-first-try"><span>40</span></td>
+	    <td id="cell3-5" class="right-from-first-try"><span>50</span></td>
+	    <td id="cell3-6" class="bonus-have"><span>135</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell4-0">Тема №4</td>
+	    <td id="cell4-1" class="first-try"><span>0</span></td>
+	    <td id="cell4-2" class="first-try"><span>0</span></td>
+	    <td id="cell4-3" class="second-try"><span>0</span></td>
+	    <td id="cell4-4" class="first-try"><span>0</span></td>
+	    <td id="cell4-5" class="first-try"><span>0</span></td>
+	    <td id="cell4-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell5-0">Тема №5</td>
+	    <td id="cell5-1" class="first-try"><span>0</span></td>
+	    <td id="cell5-2" class="first-try"><span>0</span></td>
+	    <td id="cell5-3" class="first-try"><span>0</span></td>
+	    <td id="cell5-4" class="first-try"><span>0</span></td>
+	    <td id="cell5-5" class="first-try"><span>0</span></td>
+	    <td id="cell5-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	</tbody>
+      </table>
+      
+    </div>
+
+<div id="team-3">
+      <h1 class="name"> Команда №3 </h1>
+      <h1 class="sum"> Сумма: <span>0</span> + <span>0</span> + <span>0</span> - <span>0</span> = <span>0</span>
+      </h1>
+      <table id="output-table"> 
+	<colgroup span="1">
+	  <col span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<colgroup span="1">
+	</colgroup>
+	<thead>	   
+	  <tr>
+	    <td id="cell0-0">Темы</td>
+	    <td id="cell0-1">1</td>
+	    <td id="cell0-2">2</td>
+	    <td id="cell0-3">3</td>
+	    <td id="cell0-4">4</td>
+	    <td id="cell0-5">5</td>
+	    <td id="cell0-6">Бонусы</td>
+	  </tr>
+	</thead>
+	<tfoot>
+	  <tr>
+	    <td id="cell6-0">Бонусы</td>
+	    <td id="cell6-1" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-2" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-3" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-4" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-5" class="bonus-can"><span>0</span></td>
+	    <td id="cell6-6"></td>
+	  </tr>
+	</tfoot>
+	<tbody>
+	  <tr>
+	    <td id="cell1-0">Тема №1</td>
+	    <td id="cell1-1" class="first-try"><span>0</span></td>
+	    <td id="cell1-2" class="first-try"><span>0</span></td>
+	    <td id="cell1-3" class="first-try"><span>0</span></td>
+	    <td id="cell1-4" class="first-try"><span>0</span></td>
+	    <td id="cell1-5" class="first-try"><span>0</span></td>
+	    <td id="cell1-6" class="bonus-can"><span>0</span></td>	   
+	  </tr>
+	  <tr>
+	    <td id="cell2-0">Тема №2</td>
+	    <td id="cell2-1" class="first-try"><span>0</span></td>
+	    <td id="cell2-2" class="first-try"><span>0</span></td>
+	    <td id="cell2-3" class="first-try"><span>0</span></td>
+	    <td id="cell2-4" class="first-try"><span>0</span></td>
+	    <td id="cell2-5" class="first-try"><span>0</span></td>
+	    <td id="cell2-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell3-0">Тема №3</td>
+	    <td id="cell3-1" class="first-try"><span>0</span></td>
+	    <td id="cell3-2" class="first-try"><span>0</span></td>
+	    <td id="cell3-3" class="first-try"><span>0</span></td>
+	    <td id="cell3-4" class="first-try"><span>0</span></td>
+	    <td id="cell3-5" class="first-try"><span>0</span></td>
+	    <td id="cell3-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell4-0">Тема №4</td>
+	    <td id="cell4-1" class="first-try"><span>0</span></td>
+	    <td id="cell4-2" class="first-try"><span>0</span></td>
+	    <td id="cell4-3" class="first-try"><span>0</span></td>
+	    <td id="cell4-4" class="first-try"><span>0</span></td>
+	    <td id="cell4-5" class="first-try"><span>0</span></td>
+	    <td id="cell4-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	  <tr>
+	    <td id="cell5-0">Тема №5</td>
+	    <td id="cell5-1" class="first-try"><span>0</span></td>
+	    <td id="cell5-2" class="first-try"><span>0</span></td>
+	    <td id="cell5-3" class="first-try"><span>0</span></td>
+	    <td id="cell5-4" class="first-try"><span>0</span></td>
+	    <td id="cell5-5" class="first-try"><span>0</span></td>
+	    <td id="cell5-6" class="bonus-can"><span>0</span></td>
+	  </tr>
+	</tbody>
+      </table>
+
+    </div>
+    
+    <script src="scripts/for-results.optional.js"></script>
+  </body>
+</html>

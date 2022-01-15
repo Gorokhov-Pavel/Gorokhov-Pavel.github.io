@@ -1,0 +1,226 @@
+
+table{
+	border-style: solid;
+/*	width: 20000;*/
+/*	height: 20000;*/
+    border: 0px;
+}
+td {
+/*	border-color: black;*/
+	border-width: 5px;
+	border-style: dotted;
+/*	margin: 20;*/
+/*	padding: 20;*/
+	width: 90px;
+	height: 85px;
+	background-color: white;
+	text-align: center;
+}
+
+thead td{
+    border-top-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+tfoot td{
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+tbody td{
+    color: gray;
+}
+span{
+    color: black;
+}
+
+
+tbody tr:first-child td{
+    border-bottom-color: blue;
+    border-top-color: blue;
+}
+tbody tr:first-child td:first-child {
+    border-right-color: blue;
+    color: blue;
+}
+tbody tr:first-child td:last-child {
+    border-left-color: blue;
+    color: blue;
+}
+
+
+tbody tr:first-child + tr td{
+    border-bottom-color: green;
+    border-top-color: green;
+}
+tr:first-child + tr td:first-child {
+    border-right-color: green;
+    color: green;
+}
+tr:first-child + tr td:last-child {
+    border-left-color: green;
+    color: green;
+}
+
+tbody tr:first-child + tr + tr td{
+    border-bottom-color: blue;
+    border-top-color: blue;
+}
+tr:first-child + tr + tr td:first-child {
+    border-right-color: blue;
+    color: blue;
+}
+tr:first-child + tr + tr td:last-child {
+    border-left-color: blue;
+    color: blue;
+}
+
+tbody tr:first-child + tr + tr + tr td{
+    border-bottom-color: green;
+    border-top-color: green;
+}
+tr:first-child + tr + tr + tr td:first-child {
+    border-right-color: green;
+    color: green;
+}
+tr:first-child + tr + tr + tr td:last-child {
+    border-left-color: green;
+    color: green;
+}
+
+tbody tr:first-child + tr + tr + tr + tr td{
+    border-bottom-color: blue;
+    border-top-color: blue;
+}
+tr:first-child + tr + tr + tr + tr td:first-child {
+    border-right-color: blue;
+    color: blue;
+}
+tr:first-child + tr + tr + tr + tr td:last-child {
+    border-left-color: blue;
+    color: blue;
+}
+
+
+tr {
+    border-color: blue;
+}
+
+colgroup:first-child + colgroup{
+    color: gray;
+    border-width: 6px;
+}
+
+tr td:first-child{
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+}
+
+tr td:last-child{
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+tr td:first-child + td {
+    border-left-color: red;
+    border-right-color: red;
+}
+thead td:first-child + td {
+    border-bottom-color: red;
+    color: red;
+}
+tfoot td:first-child + td {
+    border-top-color: red;
+    color: red;
+}
+
+tr td:first-child + td + td {
+    border-left-color: aqua;
+    border-right-color: aqua;
+}
+thead td:first-child + td + td {
+    border-bottom-color: aqua;
+    color: aqua;
+}
+tfoot td:first-child + td + td {
+    border-top-color: aqua;
+    color: aqua;
+}
+
+tr td:first-child + td + td + td {
+    border-left-color: red;
+    border-right-color: red;
+}
+thead td:first-child + td + td + td {
+    border-bottom-color: red;
+    color: red;
+}
+tfoot td:first-child + td + td + td {
+    border-top-color: red;
+    color: red;
+}
+
+tr td:first-child + td + td + td + td {
+    border-left-color: aqua;
+    border-right-color: aqua;
+}
+thead td:first-child + td + td + td + td {
+    border-bottom-color: aqua;
+    color: aqua;
+}
+tfoot td:first-child + td + td + td + td {
+    border-top-color: aqua;
+    color: aqua;
+}
+
+tr td:first-child + td + td + td + td + td {
+    border-left-color: red;
+    border-right-color: red;
+}
+thead td:first-child + td + td + td + td + td {
+    border-bottom-color: red;
+    color: red;
+}
+tfoot td:first-child + td + td + td + td + td {
+    border-top-color: red;
+    color: red;
+}
+
+colgroup:first-child + colgroup + colgroup {
+    color: pink;
+    border-width: 3px;
+}
+
+.first-try {
+    background-color: lavender;
+}
+.second-try {
+    background-color: darkturquoise;
+}
+.fail {
+    background-color: deeppink;
+}
+.right-from-first-try {
+    background-color: lawngreen;
+}
+.right-from-second-try {
+    background-color: limegreen;
+}
+.bonus-can {
+    background-color: wheat;
+}
+.bonus-fail {
+    background-color: fuchsia;
+}
+.bonus-have {
+    background-color: yellow;
+}
+
+iframe {
+    visibility: hidden;
+}
+
